@@ -1,3 +1,8 @@
+body{
+    background-color: rgb(206, 201, 201);
+}
+
+
 body,
 p,
 h1,
@@ -8,6 +13,11 @@ h2 {
 
 a {
     text-decoration: none;
+}
+
+a, button{
+    transition: 550ms;
+    cursor: pointer;
 }
 
 .black-header {
@@ -26,18 +36,54 @@ a {
 
 .black-header a:hover {
     color: #fff;
-    transition: 450ms;
 }
 .white-header{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 14px;
+    background-color: #fff;
 }
 .logo-container{
     display: flex;
     align-items: center;
 }
 .white-header a{
+    color: rgb(102, 107, 107);
     margin: 0 12px;
+    font-size: 17px;
+}
+
+.white-header a:hover{
+    color: #000;
+}
+
+.white-header button{
+    background-color: #a50e0e;
+    color: #fff;
+    padding: 12px 18px;
+    border-radius: 5px;
+}
+.white-header button:hover{
+    background-color: #f30b0b;
+    color: #000;
+}
+.hero{
+    height: 120vh;
+    background-image: url(./city2.jpg);
+    background-size: cover;
+}
+.news{
+    text-align:center;
+    padding: 32px;
+    background-color: #fff;
+    margin: -24px 32px 0px 32px ;
+}
+.news h2{
+    text-align: center;
+    font-weight: 300;
+    border-bottom: 2px solid rgb(196, 94, 12);
+    width: 150px;
+    margin: 0;
+    padding: 16px;
 }
