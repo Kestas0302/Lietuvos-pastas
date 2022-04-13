@@ -92,11 +92,12 @@ a, button{
 .cards{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 
 }
 .card{
-    width: 48%;
-    margin: 16px;
+    width: 49%;
+    margin-bottom: 12px;
     border: 1px solid #3f3939;
     border-radius: 5px;
     padding-bottom: 16px;
@@ -110,7 +111,49 @@ a, button{
     padding: 16px;
 
 }
+.mini{
+    width: 30%;
+}
 
+footer{
+    padding: 60px 40px;
+}
+.footer-navigation{
+    display: flex;
+}
+.nav-column ul{
+    padding-left: 16px;
+}
+.nav-column{
+    width: 25%;
+}
+
+.nav-column ul li a{
+    color: #616161;
+}
+
+.social {
+    display: flex;
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    justify-content: center;
+  }
+  .fa:hover {
+    opacity: 0.7;
+  }
+
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
 @media screen and (max-width:768px){
     .black-header{
         /* display: block; */
@@ -138,11 +181,17 @@ a, button{
     .hero{
         height: 35vh;
     }
-    .cards{
-        flex-direction: column;
-    }
+    /* .cards{
+        flex-direction: row;
+    } */
     .card{
         width: 100%;
-        margin: 16px 0;
+        margin: 8px 0;
+    }
+    .mini{
+        width: 48%;
+    }
+    .footer-navigation{
+        display: none;
     }
 }
